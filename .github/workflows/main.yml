@@ -33,6 +33,7 @@ jobs:
         uses: actions/setup-node@master
 
       - run: cd ./nazku
+      - run: ls -al
       - run: yarn
       - run: yarn build
         env:
