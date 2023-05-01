@@ -36,8 +36,6 @@ jobs:
 
       - run: yarn --cwd ./nazku install
       - run: yarn --cwd ./nazku build
-        env:
-         VUE_APP_TEST: ${{ secrets.TEST }}
          
       - working-directory: dist
         run: |
