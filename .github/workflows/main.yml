@@ -37,7 +37,7 @@ jobs:
       - run: yarn --cwd ./nazku install
       - run: yarn --cwd ./nazku build
          
-      - working-directory: dist
+      - working-directory: nazku/dist
         run: |
           git init
           cp index.html 404.html
